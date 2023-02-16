@@ -1,0 +1,46 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .image {
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+  }
+  .img{
+    width: 200px;
+    /* background-color: blueviolet; */
+    margin: 0px;
+
+  }
+  #dice,#image4{
+    height: 200px;
+  }
+  
+  #form1 {
+    background-color: #582e2e;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    /* margin-left:; */
+  }
+  
+  .hidden{
+    border:none ;
+    border-radius: 50px;
+    display: none;
+  }
+  #form1 input[type="text"] {
+    display: block;
+    margin: 10px;
+  }
+  
+  
+  /* body{
+    background-color: rgb(218, 37, 37);
+  } */
