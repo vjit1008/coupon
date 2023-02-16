@@ -39,8 +39,21 @@
     display: block;
     margin: 10px;
   }
+  #generate-coupon{
+    background-color: black;
+    color: white;
+    height: 35px;
+    border-radius: 20px;
+
+  }
+  #submit-from{
+    background-color: black;
+    color: white;
+    height: 35px;
+    border-radius: 20px;
+
+  }
   
-  
-  /* body{
-    background-color: rgb(218, 37, 37);
-  } */
+  body{
+    background-color: rgb(20, 20, 20);
+  }

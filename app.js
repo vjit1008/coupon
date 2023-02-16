@@ -25,7 +25,7 @@ form.addEventListener("submit", function(event) {
   form.classList.add("hidden");
   username.classList.remove("hidden");
   image2.style.pointerEvents = "none";
-  
+  username.style.color="white"
 });
 
 dice.addEventListener("click", function() {
@@ -33,6 +33,7 @@ dice.addEventListener("click", function() {
     sum.textContent = "Bad Luck";
     sum.classList.remove("hidden");
     dice.style.pointerEvents = "none";
+    sum.style.color="red"
     return;
   }
   const value = Math.floor(Math.random() * 6) + 1;
@@ -43,11 +44,13 @@ dice.addEventListener("click", function() {
       sum.textContent = `Sum: ${total}`;
       sum.classList.remove("hidden");
       image4.style.pointerEvents = "auto";
+      sum.style.color="green"
     } else {
       sum.textContent = `Try Again after scoring more than 10. Sum: ${total}`;
       sum.classList.remove("hidden");
       attempts += 1;
       values = [];
+      sum.style.color="lightBlue"
     }
   }
 });
@@ -57,6 +60,7 @@ image4.addEventListener("click", function() {
   coupon.classList.remove("hidden");
   generateCoupon.classList.remove("hidden");
   image4.style.pointerEvents = "none";
+  coupon.style.color="white"
 });
 
 generateCoupon.addEventListener("click", function() {
